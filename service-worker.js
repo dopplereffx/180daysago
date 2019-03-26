@@ -1,8 +1,8 @@
-const CACHE = "180-v1";
+const CACHE = "180-v3";
 self.addEventListener("install", function(e) {
   e.waitUntil(
     caches.open(CACHE).then(function(cache) {
-      return cache.addAll(["/", "/index.html"]);
+      return cache.addAll(["/", "/index.html", "/logo-32x32.png"]);
     })
   );
 });
