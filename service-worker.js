@@ -1,10 +1,14 @@
 var APP_PREFIX = "180DaysAgo_"; // Identifier for this app (this needs to be consistent across every cache update)
-var VERSION = "version_01"; // Version of the off-line cache (change this value everytime you want to update cache)
+var VERSION = "version_02"; // Version of the off-line cache (change this value everytime you want to update cache)
 var CACHE_NAME = APP_PREFIX + VERSION;
 var URLS = [
   // Add URL you want to cache in this list.
   "/180daysago/", // If you have separate JS/CSS files,
-  "/180daysago/index.html" // add path to those files here
+  "/180daysago/index.html", // add path to those files here
+  "/180daysago/logo.png",
+  "/180daysago/logo-192x192.png",
+  "/180daysago/logo-32x32.png",
+  "/180daysago/manifest.json"
 ];
 
 // Respond with cached resources
