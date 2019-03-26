@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fdf6e3" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>180 Days Ago</title>
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        background-color: #fdf6e3;
+        color: #859900;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>This app requires Javascript to be enabled.</noscript>
+    <h1 class="output"></h1>
+    <script type="text/javascript">
+      Array.prototype.forEach.call(
+        document.getElementsByClassName("output"),
+        output =>
+          (output.innerHTML = new Date(
+            new Date() - 60 * 60 * 24 * 180 * 1000
+          ).toLocaleString("en-US", {
+            month: "long",
+            day: "numeric",
+            year: "numeric"
+          }))
+      );
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js").then(function() {
+          console.log("Service worker registered");
+        });
+      }
+    </script>
+  </body>
+</html>
