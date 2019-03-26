@@ -1,7 +1,7 @@
 {
   "short_name": "180",
   "name": "180 Days Ago",
-  "start_url": "/",
+  "start_url": ".",
   "background_color": "#fdf6e3",
   "theme_color": "#fdf6e3",
   "display": "standalone",
