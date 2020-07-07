@@ -32,19 +32,15 @@
   </head>
   <body>
     <noscript>This app requires Javascript to be enabled.</noscript>
-    <h1 class="output"></h1>
+    <h1 id="output"></h1>
     <script type="text/javascript">
-      Array.prototype.forEach.call(
-        document.getElementsByClassName('output'),
-        (output) =>
-          (output.innerHTML = new Date(
-            new Date() - 60 * 60 * 24 * 180 * 1000
-          ).toLocaleString('en-US', {
-            month: 'long',
-            day: 'numeric',
-            year: 'numeric',
-          }))
-      );
+      document.getElementById('output').innerHTML = new Date(
+        new Date() - 60 * 60 * 24 * 180 * 1000
+      ).toLocaleString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      });
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker
           .register('/180daysago/service-worker.js')
