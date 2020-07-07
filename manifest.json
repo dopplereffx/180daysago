@@ -1,14 +1,14 @@
 {
   "short_name": "180",
   "name": "180 Days Ago",
-  "start_url": "/180daysago",
-  "background_color": "#fdf6e3",
-  "theme_color": "#fdf6e3",
+  "start_url": "/180daysago/",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "display": "standalone",
   "icons": [
     {
       "src": "logo.svg",
-      "sizes": "any"
+      "sizes": "512x512 256x256 64x64 32x32 192x192"
     }
   ]
 }
