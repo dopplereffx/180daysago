@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#fdf6e3" />
     <link rel="manifest" href="./manifest.json" />
-    <link rel="shortcut icon" href="./logo-32x32.png" type="image/png" />
+    <link rel="shortcut icon" href="./logo.svg" type="image/svg" />
     <link rel="canonical" href="https://doppler.github.io/180daysago/" />
     <title>180 Days Ago</title>
     <style type="text/css">
@@ -30,21 +30,21 @@
     <h1 class="output"></h1>
     <script type="text/javascript">
       Array.prototype.forEach.call(
-        document.getElementsByClassName("output"),
-        output =>
+        document.getElementsByClassName('output'),
+        (output) =>
           (output.innerHTML = new Date(
             new Date() - 60 * 60 * 24 * 180 * 1000
-          ).toLocaleString("en-US", {
-            month: "long",
-            day: "numeric",
-            year: "numeric"
+          ).toLocaleString('en-US', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric',
           }))
       );
-      if ("serviceWorker" in navigator) {
+      if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-          .register("/180daysago/service-worker.js")
-          .then(function() {
-            console.log("Service worker registered");
+          .register('/180daysago/service-worker.js')
+          .then(function () {
+            console.log('Service worker registered');
           });
       }
     </script>
