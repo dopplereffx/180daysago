@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    #appName {
+      font-size: 240px;
+      fill: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+  </style>
+
+  <circle cx="256" cy="256" r="256"/>
+  <circle cx="256" cy="256" r="240" stroke="red" stroke-width="16"/>
+  <text id="appName" x="256" y="256" stroke="white" alignment-baseline="middle" text-anchor="middle" >
+    180
+  </text>
+</svg>
