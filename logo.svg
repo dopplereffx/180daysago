@@ -10,7 +10,7 @@
 
   <circle cx="256" cy="256" r="256"/>
   <circle cx="256" cy="256" r="240" stroke="red" stroke-width="16"/>
-  <text id="appName" x="256" y="256" stroke="white" alignment-baseline="middle" text-anchor="middle" >
+  <text id="appName" x="256" y="330" stroke="white" text-anchor="middle" >
     180
   </text>
 </svg>
