@@ -17,22 +17,31 @@
     <style type="text/css">
       body {
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5em;
         background-color: #000000;
         color: #ffffff;
         height: 100vh;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
       }
       h1 {
         text-align: center;
+        font-size: 3em;
+      }
+      #qr-code {
+        height: 50vmin;
+        width: 50vmin;
       }
     </style>
   </head>
   <body>
     <noscript>This app requires Javascript to be enabled.</noscript>
     <h1 id="output"></h1>
+    <div id="qr-code">
+      <img src="qr-code.svg" title="qr code" alt="qr code" />
+    </div>
+    <div><p>https://doppler.github.io/180daysago/</p></div>
     <script type="text/javascript">
       document.getElementById('output').innerHTML = new Date(
         new Date() - 60 * 60 * 24 * 180 * 1000
