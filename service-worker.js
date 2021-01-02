@@ -6,6 +6,7 @@ var URLS = [
   "/180daysago/", // If you have separate JS/CSS files,
   "/180daysago/index.html", // add path to those files here
   "/180daysago/logo.png",
+  "/180daysago/logo-192.png",
   "/180daysago/logo.svg",
   "/180daysago/manifest.json"
 ];
